@@ -49,10 +49,12 @@ const wrapP5Funcs = ASTs => ASTs.map(wrapP5Func)
 
 module.exports = function (sourceCode, options = opts) {
   instance = options.instance
-  const templateCode = `
-  export default function (${instance}) {
+  const templateCode =   `
+  let sketch = function (${instance}) {
     %= p5Main %
-  }
+  };
+  
+  new p5(sketch)
   `
 
   // https://github.com/estools/estemplate#advanced-generation-with-source-map
