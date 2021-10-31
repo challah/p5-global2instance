@@ -65,6 +65,7 @@ const p5callFuncs = [
   'quad',
   'rect',
   'triangle',
+  'circle',
 
   // Shape.3D_Models
   'loadModel',
@@ -248,7 +249,29 @@ const p5callFuncs = [
   'normalMaterial',
   'texture',
   'ambientMaterial',
-  'specularMaterial'
+  'specularMaterial',
+
+  // DOM
+  'select',
+  'selectAll',
+  'removeElements',
+  'changed',
+  'input',
+  'createDiv',
+  'createP',
+  'createSpan',
+  'createImg',
+  'createA',
+  'createSlider',
+  'createButton',
+  'createCheckbox',
+  'createSelect',
+  'createRadio',
+  'createColorPicker',
+  'createInput',
+  'createFileInput',
+  'createVideo',
+  'createAudio',
 ]
 
 const p5Instance = [
@@ -276,6 +299,8 @@ const p5vars = [
   'QUARTER_PI',
   'TAU',
   'TWO_PI',
+  'DEGREES',
+  'RADIANS',
 
   // Environment
   'frameCount',
@@ -318,9 +343,8 @@ const p5vars = [
   'pwinMouseY',
   'mouseButton',
   'mouseIsPressed',
-
-  'pixels'
-]
+  'pixels',
+  ]
 
 // list of function that is better to use js stdfunc rather than p5
 // the purpose I left it here is in case need for warning in enforce mode
